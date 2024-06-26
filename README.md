@@ -1,4 +1,4 @@
-# Centralized Neighbourhood Service Django Web APP
+# TRUSTEDHANDS
 This Repo consits of API for CNS.
 
 ## Getting Started
