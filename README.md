@@ -42,5 +42,4 @@ python manage.py createsupeuser
 Run the Project.
 python manage.py runserver
 
-All done 🤟
 ```
