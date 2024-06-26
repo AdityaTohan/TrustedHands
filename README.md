@@ -22,24 +22,18 @@ A step by step series of examples that tell you how to get a development env run
 
 ```
 clone the project:
-git clone https://github.com/CNS223/app.git
 
 get in to project
-cd app
 
 create virtual environment
 
 Activate Virtual Environment
 
-source bin/activate
-
 Install required packages from requirements/base.txt
 pip install -r requirements.txt
 
-
 Create .env file in the root path
 - Add require configuration in .env file
-
 
 Create admin creds
 python manage.py createsupeuser
