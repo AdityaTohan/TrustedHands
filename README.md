@@ -39,7 +39,7 @@ Create admin creds
 python manage.py createsupeuser
 
 
-Run the Project
+Run the Project.
 python manage.py runserver
 
 All done 🤟
