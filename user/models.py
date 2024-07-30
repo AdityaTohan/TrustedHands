@@ -196,7 +196,7 @@ class EmailVerification(models.Model):
 
 from service.models import ServiceBooking
 
-
+# get in touch
 class ProviderGetInTouch(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sender_contacts', null=False, blank=False)
     provider = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name='recipient_contacts', blank=False)
