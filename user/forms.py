@@ -5,7 +5,7 @@ from service.models import *
 from user.models import *
 
 
-class ProviderSignupForm(forms.Form):
+class ProviderSignupForm(forms.Form): #provider signup form
     first_name = forms.CharField(max_length=100, label='First Name', widget=forms.TextInput(
         attrs={'class': 'form-control', 'placeholder': 'Enter your First Name', 'required': True}))
     last_name = forms.CharField(max_length=100, label='Last Name', widget=forms.TextInput(
@@ -19,7 +19,7 @@ class ProviderSignupForm(forms.Form):
                'required': True}))
 
 
-class UserSignupForm(forms.Form):
+class UserSignupForm(forms.Form): #user signup form
     first_name = forms.CharField(label='First Name', max_length=100, widget=forms.TextInput(
         attrs={'class': 'form-control', 'placeholder': 'Enter your First Name', 'required': True}))
     last_name = forms.CharField(label='Last Name', max_length=100, widget=forms.TextInput(
@@ -33,7 +33,7 @@ class UserSignupForm(forms.Form):
         attrs={'class': 'form-control pass-input', 'placeholder': '*************', 'required': True}))
 
 
-class LoginForm(forms.Form):
+class LoginForm(forms.Form): #login form
     email = forms.EmailField(label='Email', max_length=100, widget=forms.EmailInput(
         attrs={'class': 'form-control', 'placeholder': 'johndoe@example.com'}))
     password = forms.CharField(label='Password', widget=forms.PasswordInput(
