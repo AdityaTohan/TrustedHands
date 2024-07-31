@@ -11,14 +11,16 @@ class ContactUsForm(forms.ModelForm):
         model = ContactUs
         fields = ['name', 'email', 'phone', 'message']
 
+   def clean_phone(self):
+        phone = self.cleaned_data.get('phone')
+        if phone and len(phone) < 10:
+            raise forms.ValidationError("Phone number must be at least 10 digits.")
+        return phone
+       
     def clean_email(self):
         email = self.cleaned_data.get('email')
         if not email:
             raise forms.ValidationError("Email field is required.")
         return email
 
-    def clean_phone(self):
-        phone = self.cleaned_data.get('phone')
-        if phone and len(phone) < 10:
-            raise forms.ValidationError("Phone number must be at least 10 digits.")
-        return phone
+    
