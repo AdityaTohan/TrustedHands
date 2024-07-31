@@ -23,7 +23,7 @@ class AboutUsView(View):
             context['user'] = user
         except Exception as e:
             pass
-        return render(request, self.template_name, context=context)
+        return render(request, self.template_name, context=context) #rendering the request
 
 
 class ContactUsView(View):
