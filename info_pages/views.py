@@ -2,11 +2,12 @@ from django.shortcuts import render
 from django.views import View
 from user.models import User
 from info_pages.models import *
+from django.contrib.auth.hashers import make_password, check_password
+from django.urls import reverse_lazy, reverse
 from info_pages.forms import *
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
-from django.contrib.auth.hashers import make_password, check_password
-from django.urls import reverse_lazy, reverse
+
 from pyexpat.errors import messages
 # Create your views here.
 
